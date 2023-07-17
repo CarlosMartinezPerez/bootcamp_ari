@@ -1,8 +1,8 @@
 import requests
 
-def deck_default(deck_count):
+def deck_default(deck_count=1):
     deck = requests.get(f'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count={deck_count}').json()
     return deck
 
-qty_baralhos = 2  # Número de baralhos a embaralhar
-print(deck_default(qty_baralhos))
+print(deck_default(4))  # Especificando o número de baralhos como 2
+
