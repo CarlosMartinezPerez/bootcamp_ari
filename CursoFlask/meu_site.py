@@ -20,5 +20,14 @@ def usuarios(nome_usuario):
 if __name__ == "__main__":
     app.run(debug=True)
 
+"""
+Para comocar o site no ar ou fazer alterações:
+pasta do projeto> heroku login
+pasta do projeto> heroku git:remote -a vaitimao
+pasta do projeto> git add .
+pasta do projeto> git commit -am "deploy inicial 180723"
+pasta do projeto> git push heroku master
 
-# servidor do heroku
+Endereço do site:
+https://vaitimao-5e0e3cd23a82.herokuapp.com/
+"""
